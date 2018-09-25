@@ -1,0 +1,114 @@
+header {
+  background-color: white;
+}
+
+.headLinks {
+    color: #FFD0DC;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFD0DC;
+    font-family: Arial;
+    width: 100%;
+    border-style: solid;
+    border-width: 11px;
+    font-size: 18px;
+}
+
+a {
+  color: black;
+}
+
+.headLinks a:hover {
+  background-color: white;
+  text-decoration: none;
+  padding: 15px 15px;
+}
+
+.headLinks a:visited {
+  text-decoration: none;
+  padding: 20px 15px;
+}
+
+.name {
+  font-size: 65px;
+  color: black;
+  font-family: Satisfy;
+}
+
+.glyphicon-grain {
+  color: #FFD0DC;
+}
+
+.home {
+  color: black;
+}
+
+#myCarousel img {
+  align-content: center;
+  width: 100%;
+  max-height: 450px;
+}
+
+#myCarousel {
+  height: 450px;
+}
+
+#css {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#js {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#ph {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.img-circle {
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+}
+
+.well {
+  font-size: 15px;
+  background-color: #DDFFAC;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+footer {
+  background-color: #FFE3E3;
+  height: 45px;
+  color: black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#resourcefoot {
+  background-color: #FFE3E3;
+  height: 45px;
+  color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }

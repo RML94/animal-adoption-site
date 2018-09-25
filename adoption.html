@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "reset.css">
+	<link rel = "stylesheet" href = "assign5.css">
+	<script type="text/javascript" src="forminfo.js"></script>
+	<script type="text/javascript" src="deletelist.js"></script>
+	<script type="text/javascript" src="petinfo.js"></script>
+	<script type="text/javascript" src="updatelist.js"></script>
+	<title>Cute, Cuddly Adoptions</title>
+</head>
+<body>
+	<div class="form">
+		<h1>Exotic Animal Adoption!</h1><br>
+
+		<figure>
+		 <a href="images/amazon-big.jpg"><img src="images/amazon-small2.jpg" alt="Monkeys" title="Monkeys"/></a>
+		</figure><br>
+
+		<a href="http://triton.towson.edu/~rlee14/bootstrap.html" target="_blank" id="home"><b>Home</b></a>
+
+		<form name="form" id="form1" method="post" action="addanimal.php" onsubmit="return petinfo();">
+		<fieldset style="text-align: center;">
+			<legend style="text-align: center; font-family: Satisfy; font-size: 20px;"><b>Add Animals</b></legend> <br>
+			<b>Animal Name:</b> <input type="text" id="petn" name="Name"><br><br>
+			<b>Animal Age:</b> <input type="text" id="peta" name="Age"> <br><br><hr><br>
+			<b>Breed:</b> <input type="text" id="pett" name="Type"> <br><br>
+			<b>Price:</b> <input type="text" id="petp" name="Price"> <br><br>
+			<input type="submit"> <input type="reset">
+		</fieldset>
+		</form>
+
+		<form name="form" id="form1" method="post" action="form.php" onsubmit="return validate(email);">
+		<fieldset style="text-align: center;">
+			<legend style="text-align: center; font-family: Satisfy; font-size: 20px;"><b>Seller Information</b></legend> <br>
+			<b>First Name:</b> <input type="text" id="first" name="first_name"><br><br>
+			<b>Last Name:</b> <input type="text" id="last" name="last_name"> <br><br><hr><br>
+			<b>E-mail:</b> <input type="email" id="mail" name="email"> <br><br>
+			<b>Pet ID:</b> <input type="text" id="pet_id" name="pet_id"> <br><br>
+			<input type="submit"> <input type="reset">
+		</fieldset>
+		</form>
+
+		<form name="form" id="form2" method="post" action="delete.php" onsubmit="return deletelist();">
+			<fieldset style="text-align: center;">
+				<legend style="text-align: center; font-family: Satisfy; font-size: 20px;"><b>Delete Listing</b></legend> <br>
+				<b>Listing ID#:</b> <input type="text" id="list_id" name="list_id"><br><br>
+				<input type="submit"> <input type="reset">
+			</fieldset>
+		</form>
+
+		<form name="form" id="form2" method="post" action="update.php" onsubmit="return updatelist();">
+			<fieldset style="text-align: center;">
+				<legend style="text-align: center; font-family: Satisfy; font-size: 20px;"><b>Update Seller Information</b></legend> <br>
+				<b>Listing ID#:</b> <input type="text" id="list_d" name="list_id"><br><br>
+				<b>First Name:</b> <input type="text" id="first_name" name="first_name"><br><br>
+				<b>Last Name:</b> <input type="text" id="last_name" name="last_name"> <br><br>
+				<b>E-mail:</b> <input type="email" id="email" name="email"> <br><br>
+				<input type="submit"> <input type="reset">
+			</fieldset>
+		</form><br><br>
+
+		<p id="listing">For animal adoption listings, click the following button! </p>
+		<form action="listing.php" method="post">
+			<input type="submit" />
+	    </form><br><hr>
+
+		<p id="allinfo">For all available animals, click on the following button! </p>
+		<form action="selectall.php" method="post">
+			<input type="submit" />
+	    </form><br>
+
+	    <p id="breeds">For information on each adorable animal please select from the following breeds!</p>
+	    <form action="selectbytype.php" method="post"><br>
+	    	<select name="Type">
+	    		<option>Choose Breed:</option> 
+	    		<option value="Bengal Tiger Cub">Bengal Tiger Cub</option>
+	    		<option value="Sloth">Sloth</option>
+	    		<option value="Chimpanzee">Chimpanzee</option>
+	    		<option value="Finger Monkey">Finger Monkey</option>
+	    		<option value="Capuchin Monkey">Capuchin Monkey</option>
+	    	</select> <br>
+	    	<input Type="submit" />
+	    </form><br><hr><br>
+
+		<p id="sellerinfo">For information on the sellers of the animals, click on the following button! </p>
+		<form action="sellselectall.php" method="post">
+			<input type="submit" />
+	    </form><br>
+
+	</div>
+</body>
+</html>
